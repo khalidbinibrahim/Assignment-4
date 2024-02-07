@@ -41,6 +41,7 @@ function deleteInvalids(array) {
     return array.filter(item => typeof item === 'number' && !isNaN(item));
 }
 
+
 function password(obj) {
     if (!obj.hasOwnProperty('name') || !obj.hasOwnProperty('birthYear') || !obj.hasOwnProperty('siteName')) {
         return "invalid";
